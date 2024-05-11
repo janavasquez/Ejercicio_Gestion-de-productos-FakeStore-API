@@ -1,0 +1,22 @@
+<button (click)="loadProduct()">Ver producto</button>
+
+@if(product) {
+  <div>
+    Id del producto {{product.id}}
+  </div>
+  <div>
+    Nombre del producto {{product.title}}
+  </div>
+  <div>
+    Precio del producto {{product.price}}
+  </div>
+  <div>
+    Descripción del producto {{product.description}}
+  </div>
+  <div>
+    Categoria del producto {{product.category}}
+  </div>
+  <div>
+    Foto del producto {{product.image}}
+  </div>
+}

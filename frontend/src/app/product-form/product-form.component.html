@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form class="mt-5" [formGroup]="productForm" (ngSubmit)="save()">
+
+        <input type="hidden" formControlName="id">
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="title" formControlName="title"
+          placeholder="">
+          <label for="title">Título</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="number" min="0" step="0.01"
+          class="form-control" id="price" formControlName="price"
+          placeholder="">
+          <label for="price">Precio en Euros (€)</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="description" formControlName="description"
+          placeholder="">
+          <label for="price">Descripción</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="category" formControlName="category"
+          placeholder="">
+          <label for="price">categoria</label>
+        </div>
+
+        <div class="d-grid gap-2">
+          <button class="btn btn-success" type="submit">Enviar</button>
+          <button class="btn btn-danger" type="button">Cancelar</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
